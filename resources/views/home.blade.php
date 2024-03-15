@@ -11,9 +11,11 @@
 </head>
 
 <body>
-    @include('./partials/header')
-    <h1>Laravel with Bootstrap + Vite</h1>
-    @include('./partials/footer')
+    @include('./partials.header')
+    <h1>Homepage</h1>
+    @include('./partials.footer')
+
+
 </body>
 
 </html>
