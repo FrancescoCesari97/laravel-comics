@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layout.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Document</title>
-
-    @vite('resources/js/app.js')
-</head>
-
-<body>
-    @include('./partials.header')
-    <h1>Homepage</h1>
-    @include('./partials.footer')
+@section('title','Homepage')
 
 
-</body>
 
-</html>
+@section('main-content')
+  <h1>Homepage</h1>
+@endsection
