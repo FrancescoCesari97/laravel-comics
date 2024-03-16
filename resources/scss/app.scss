@@ -37,3 +37,25 @@ a{
   color: #0078f7;
   border-bottom: 2px solid #0078f7;
 }
+
+.top-bar{
+    height: 20px;
+    background-color: #0078f7;
+    color: white;
+    font-size: 10px;
+}
+
+p{
+    margin: 0;
+}
+
+.jumbotron-logo{
+    height: 400px;
+    .jumbotron-logo-img{
+        width: 100%; /* or any custom size */
+        height: 100%; 
+        object-fit: cover;
+       
+       
+    }
+}

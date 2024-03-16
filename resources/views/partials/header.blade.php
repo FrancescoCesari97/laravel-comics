@@ -2,9 +2,17 @@
 
 
 <header >
-    <div class="container d-flex justify-content-center">
+    <div class="top-bar d-flex align-items-center">
+    <div class="container d-flex justify-content-end align-items-center">
 
-        <img src="." alt="">
+        <p class="mx-2">DC POWER VISA </p>
+        <p class="mx-2">ADDITIONAL DC SITE </p>
+    </div>
+
+    </div>
+    <div class="container d-flex justify-content-center align-items-center py-2">
+
+        <img class="DC-logo" src="{{ url('/images/dc-logo.png')}}" alt="">
         <ul>
             <li>
             {{-- classe blade per fare la condizione --}}
@@ -28,4 +36,10 @@
             </li>
         </ul>
     </div>
+
+    <div class="jumbotron-logo">
+        <img class="jumbotron-logo-img" src="{{ url('/images/jumbotron.jpg')}}" alt="">
+
+    </div>
+
 </header>
