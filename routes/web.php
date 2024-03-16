@@ -22,7 +22,10 @@ Route::get('/characters', function () {
 })->name('characters');
 
 Route::get('/comics', function () {
-  return view('comics');
+
+  $comics = config('comics');
+
+  return view('comics', compact('comics'));
 })->name('comics');
 
 
@@ -33,3 +36,11 @@ Route::get('/movies', function () {
 Route::get('/tv', function () {
   return view('tv');
 })->name('tv');
+
+Route::get('/collectibles', function () {
+  return view('collectibles');
+})->name('collectibles');
+
+Route::get('/videos', function () {
+  return view('videos');
+})->name('videos');

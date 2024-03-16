@@ -10,9 +10,9 @@
     </div>
 
     </div>
-    <div class="container d-flex justify-content-center align-items-center py-2">
+    <div class="container d-flex justify-content-center align-items-center ">
 
-        <img class="DC-logo" src="{{ url('/images/dc-logo.png')}}" alt="">
+        <img class="DC-logo py-2" src="{{ url('/images/dc-logo.png')}}" alt="">
         <ul>
             <li>
             {{-- classe blade per fare la condizione --}}
@@ -33,6 +33,12 @@
             </li>
             <li>
                 <a @if (Route:: currentRouteName() == 'tv') class="active" @endif  href="{{ route('tv') }}">Tv</a>
+            </li>
+             <li>
+                <a @if (Route:: currentRouteName() == 'collectibles') class="active" @endif  href="{{ route('collectibles') }}">Collectibles</a>
+            </li>
+              <li>
+                <a @if (Route:: currentRouteName() == 'videos') class="active" @endif  href="{{ route('videos') }}">Videos</a>
             </li>
         </ul>
     </div>

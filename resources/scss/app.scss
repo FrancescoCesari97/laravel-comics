@@ -31,6 +31,7 @@ a{
     text-decoration: none;
     color: inherit;
     padding:  1rem;
+    padding-bottom:auto;
 }
 
 .active{
@@ -58,4 +59,16 @@ p{
        
        
     }
+}
+
+.main-comics{
+  background-color: #1c1c1c;
+
+  .titolo{
+    background-color: #0282f9;
+    padding: 0.7rem;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 20px;
+  }
 }
