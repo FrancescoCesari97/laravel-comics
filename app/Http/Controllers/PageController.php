@@ -22,6 +22,10 @@ class PageController extends Controller
     public function comicDetail($index) 
     {
         $comics = config('comics');
+
+        if(!array_key_exists($index, $comics))
+        abort(404);
+
         $comic = $comics[$index];
 
         return view('pages.comic-detail', compact('comic'));

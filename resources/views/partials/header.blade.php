@@ -2,7 +2,7 @@
 
 
 <header >
-    <div class="top-bar d-flex align-items-center">
+    <div class="bar top-bar d-flex align-items-center">
     <div class="container d-flex justify-content-end align-items-center">
 
         <p class="mx-2">DC POWER VISA </p>
