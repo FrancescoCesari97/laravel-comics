@@ -23,7 +23,7 @@ Route::get('/characters', function () {
 
 Route::get('/comics', [PageController::class, 'comics'] )->name('comics');
 
-Route::get('/comic-detail', [PageController::class, 'ComicDetail'] )->name('comic');
+Route::get('/comic-detail/{index}', [PageController::class, 'comicDetail'] )->name('comic-detail');
 
 
 Route::get('/movies', function () {

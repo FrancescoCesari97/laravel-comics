@@ -19,10 +19,10 @@ class PageController extends Controller
         return view('pages.comics', compact('comics'));
     }
 
-    public function ComicDetail() 
+    public function comicDetail($index) 
     {
         $comics = config('comics');
-        $comic = $comics[0];
+        $comic = $comics[$index];
 
         return view('pages.comic-detail', compact('comic'));
     }
