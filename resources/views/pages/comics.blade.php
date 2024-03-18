@@ -13,7 +13,9 @@ Comics
             @foreach($comics as $comic)
             <div class="col-2">
                 <div class="card">
-                    <img src="$comic.thumb" alt="">
+                    <img class="img-fluid comic-cover" src="{{$comic['thumb']}}" alt="">
+
+                    <h3>{{$comic['series']}}</h3>
                 </div>
             </div>
             @endforeach

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\PageController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,34 +15,29 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-  return view('home');
-})->name('home');
+Route::get('/', [PageController::class, 'index'])->name('home');
 
 Route::get('/characters', function () {
-  return view('characters');
+  return view('pages.characters');
 })->name('characters');
 
-Route::get('/comics', function () {
+Route::get('/comics', [PageController::class, 'comics'] )->name('comics');
 
-  $comics = config('comics');
-
-  return view('comics', compact('comics'));
-})->name('comics');
+Route::get('/comic-detail', [PageController::class, 'ComicDetail'] )->name('comic');
 
 
 Route::get('/movies', function () {
-  return view('movies');
+  return view('pages.movies');
 })->name('movies');
 
 Route::get('/tv', function () {
-  return view('tv');
+  return view('pages.tv');
 })->name('tv');
 
 Route::get('/collectibles', function () {
-  return view('collectibles');
+  return view('pages.collectibles');
 })->name('collectibles');
 
 Route::get('/videos', function () {
-  return view('videos');
+  return view('pages.videos');
 })->name('videos');
